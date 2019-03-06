@@ -21,10 +21,11 @@ Example 3:
 
 Input: 120
 Output: 21
+
 Note:
-Assume we are dealing with an environment which could only store integers 
-within the 32-bit signed integer range: [−2^31,  2^31 − 1]. For the purpose 
-of this problem, assume that your function returns 0 when the reversed 
+Assume we are dealing with an environment which could only store integers
+within the 32-bit signed integer range: [−2^31,  2^31 − 1]. For the purpose
+of this problem, assume that your function returns 0 when the reversed
 integer overflows.
 """
 
@@ -54,7 +55,7 @@ def reverse(x):
         return a
     else:
         return int('0')
-    
+
 if __name__ == "__main__":
     x = 123
     print(reverse(x))
@@ -78,7 +79,7 @@ def reverse(x):
         rev = rev * 10 + pop
         x = int(x/10)
     return rev
-    
+
 if __name__ == "__main__":
     x = 123
     print(reverse(x))
